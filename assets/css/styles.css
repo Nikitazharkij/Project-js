@@ -124,9 +124,9 @@ header h2.tzine a{
 .filters span{
 	font-size:14px;
 	display: block;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 	font-weight: bold;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .filters label{
@@ -415,4 +415,24 @@ header h2.tzine a{
 .error h3{
 	font-size: 40px;
 }
+
+.nav-info{
+	border: 2px solid black;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.nav-info:hover{
+	border: 2px solid red;
+}
+
+.nav-info span{
+	display: inline-block;
+}
+
+.nav-info img{
+	width: 13%;
+	margin-left: 5px;
+}
+
 

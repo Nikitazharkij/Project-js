@@ -52,6 +52,12 @@
 					</div>
 
 					<button>Clear filters</button>
+					<div id="cart-info" class="nav-info">
+						<img src="assets/images/basket.png" alt="basket">
+						<span id="item-count">0</span>
+						<span>items - $</span>
+						<span id="item-total">10</span>
+					</div>
 
 				</form>
 
@@ -69,9 +75,8 @@
 								<li><span>OS: </span>{{specs.os}}</li>
 								<li><span>Camera: </span>{{specs.camera}} Mpx</li>
 							</ul>
-							<button>Buy Now!</button>
+							<button class="product-button">Buy Now!</button>
 							<p class="product-price">{{price}}$</p>
-							<div class="highlight"></div>
 						</li>
 					{{/each}}
 				</script> 
