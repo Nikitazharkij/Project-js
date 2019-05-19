@@ -7,7 +7,7 @@ body{
 	font: normal 16px Arial, Helvetica, sans-serif;
 }
 
-h1, h3{
+h1, h3, h4{
 	font: normal 24px 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
@@ -79,7 +79,9 @@ header h2.tzine a{
 	padding: 0 40px;
 }
 
-.main-content h3{
+.main-content h3,
+.main-content h4
+{
 	font-size: 28px;
 	color:  #5a96b9;
 	padding-bottom: 20px;
@@ -326,6 +328,10 @@ header h2.tzine a{
 	z-index: 100;
 }
 
+.total-products{
+	z-index: 100;
+}
+
 .overlay{
 	height: 20px;
 	width: 100%;
@@ -337,7 +343,8 @@ header h2.tzine a{
 	z-index: 100;
 }
 
-.single-product.visible .overlay{
+.single-product.visible .overlay,
+.total-products.visible{
 	height: 100%;
 }
 
@@ -361,7 +368,8 @@ header h2.tzine a{
 
 }
 
-.single-product.visible .preview-large{
+.single-product.visible .preview-large,
+.total-products.visible .preview-large{
 	opacity: 1;
 	transition: 1.4s;
 	pointer-events: auto;
@@ -386,7 +394,7 @@ header h2.tzine a{
 .close{
 	position: absolute;
 	right: 25px;
-	top: 15px;
+	top: -35px;
 
 	font-size: 28px;
 	color: #555;
@@ -435,4 +443,52 @@ header h2.tzine a{
 	margin-left: 5px;
 }
 
+.items-list{
+	width: 650px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.items-list h4{
+	width: 100px;
+}
+
+.preview-large .items-list h3{
+	width: 520px;
+	margin-top: 0px;
+}
+
+
+.preview-large .items-list img{
+	width: 30px;
+	height: 50px;
+}
+
+.total-products .preview-large{
+	height: auto;
+	margin-top: 50px;
+	top: 10%;
+}
+
+.delete-icon {
+	margin-top: 10px;
+	cursor: pointer;
+	color: #b80c09;
+}
+
+.fa-trash:before {
+	content: "\f1f8"; }
+
+.fas {
+	font-style: normal;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900; }
+
+@font-face {
+	font-family: 'Font Awesome 5 Free';
+	font-style: normal;
+	font-weight: 900;
+	src: url("../webfonts/fa-solid-900.eot");
+	src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
 

@@ -22,6 +22,7 @@ class App {
                 this.products = data;
                 this.generateAllProductsHTML(this.products);
                 this.initRoutes();
+                this.basket.addPriceList();
                 window.dispatchEvent(new HashChangeEvent('hashchange'));
             });
     }
@@ -30,7 +31,7 @@ class App {
         this.router.addRoute('', this.renderHomePage.bind(this));
         this.router.addRoute('#filter', this.renderFilterResults.bind(this));
         this.router.addRoute('#product', this.renderSingleProduct.bind(this));
-        this.router.addRoute('#total', this.renderTotalProduct.bind(this));
+        this.router.addRoute('#total', this.renderTotalProducts.bind(this));
         this.router.addRoute('404', this.renderErrorPage.bind(this));
     }
 
@@ -104,8 +105,10 @@ class App {
         page.classList.add('visible');
     }
 
-    renderTotalProduct() {
-
+    renderTotalProducts() {
+        const pageTotal = document.querySelector('.total-products');
+        console.log()
+        pageTotal.classList.add('visible');
     }
 
     generateAllProductsHTML(data) {
@@ -119,10 +122,8 @@ class App {
         list.querySelectorAll('li').forEach((li) => {
             li.addEventListener('click', (event) => {
                 event.preventDefault();
-                if (event.target.classList.contains('product-button')) {
-                    console.log(event.target);
-                } else {
-                window.location.hash = `product/${li.dataset.index}`;
+                if (!event.target.classList.contains('product-button')) {
+                    window.location.hash = `product/${li.dataset.index}`;
                 }
             })
         });
@@ -138,6 +139,7 @@ class App {
         const page = document.querySelector('.error');
         page.classList.add('visible');
     }
+
 }
 
 const app = new App();
