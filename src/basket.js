@@ -3,19 +3,16 @@ export class Basket {
         this.cartInfo = document.getElementById('cart-info');
         this.productButtons = document.querySelectorAll('.product-button');
         this.items = {};
-        this.find();
-    }
-
-    find() {
-        this.cartInfo.addEventListener('click', () => {
-            console.log('Hi');
-        });
+        this.itemTotal = document.getElementById('item-total');
+        this.itemCount = document.getElementById('item-count');
+        this.spendMoney = document.getElementById('final-money');
+        this.buyItems();
     }
 
     addPriceList(){
-        this.productButtons = document.querySelectorAll('.product-button');
+        const productButtons = document.querySelectorAll('.product-button');
 
-        this.productButtons.forEach((button) => {
+        productButtons.forEach((button) => {
         button.addEventListener('click', (event) => {
             let price = event.target.nextElementSibling.textContent;
             let finalPrice = price.slice(0, -1);
@@ -35,7 +32,8 @@ export class Basket {
             cartItem.innerHTML = `
                     <img src="${this.items.img}"/>
                     <h3>${this.items.name}</h3>
-                    <h4>${this.items.price}$</h4>
+                    <span class="price-item">${this.items.price}</span>
+                    <span>$</span>
                     <div class="delete-icon fas fa-trash" data-id=""></div>
             `
 
@@ -43,19 +41,58 @@ export class Basket {
             const total = document.getElementById('close-cart');
             cart.insertBefore(cartItem, total);
 
-            // console.log(this.items);
+            this.showTotals();
         })
     });
 
     }
 
-    // addPriceList(){
-    //     console.log(this.productButtons);
-    //     this.productButtons.forEach((button) => {
-    //         button.addEventListener('click', (event) => {
-    //             console.log(event.target.nextElementSibling.textContent);
-    //         })
-    //     })
-    // }
-// console.log(event.target.nextElementSibling.textContent);
+    renderTotalProducts() {
+        const pageTotal = document.querySelector('.total-products');
+        pageTotal.classList.add('visible');
+    }
+
+    showTotals(){
+        const total = [];
+        const items = document.querySelectorAll('.price-item');
+
+        items.forEach((item) => {
+            total.push(parseFloat(item.textContent));
+        });
+
+        let totalMoney = total.reduce((sum, current) => {
+            return sum + current;
+        }, 0);
+
+        let finalMoney = totalMoney.toFixed(2);
+
+        this.itemTotal.textContent = finalMoney;
+        this.spendMoney.textContent= finalMoney;
+        this.itemCount.textContent = total.length;
+
+        console.log(finalMoney);
+    }
+
+    buyItems(){
+    const totalButton = document.querySelector('.total-button');
+    totalButton.addEventListener('click', (event) => {
+        const itemsList = document.querySelectorAll('.total-products .items-list');
+
+        this.itemTotal.textContent = 0;
+        this.spendMoney.textContent= 0;
+        this.itemCount.textContent = 0;
+
+        if (itemsList.length === 0) {
+            alert('No items for choosing!!!')
+        } else {
+            alert('You bought items.')
+        }
+
+        itemsList.forEach((item) => {
+            item.remove();
+        });
+
+    });
+}
+
 }

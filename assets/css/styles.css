@@ -7,7 +7,7 @@ body{
 	font: normal 16px Arial, Helvetica, sans-serif;
 }
 
-h1, h3, h4{
+h1, h3, .items-list span{
 	font: normal 24px 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
@@ -80,8 +80,8 @@ header h2.tzine a{
 }
 
 .main-content h3,
-.main-content h4
-{
+.items-list span,
+.top-list{
 	font-size: 28px;
 	color:  #5a96b9;
 	padding-bottom: 20px;
@@ -124,11 +124,11 @@ header h2.tzine a{
 }
 
 .filters span{
-	font-size:14px;
+	font-size: 16px;
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
+	margin-top: 8px;
 	font-weight: bold;
-	margin-top: 10px;
 }
 
 .filters label{
@@ -266,7 +266,8 @@ header h2.tzine a{
 
 /* Price and order button */
 
-.products-list button{
+.products-list button,
+.total-button{
 	border-radius: 2px;
 	background-color:  #87bae1;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
@@ -344,7 +345,7 @@ header h2.tzine a{
 }
 
 .single-product.visible .overlay,
-.total-products.visible{
+.total-products.visible .overlay{
 	height: 100%;
 }
 
@@ -397,7 +398,7 @@ header h2.tzine a{
 	top: -35px;
 
 	font-size: 28px;
-	color: #555;
+	color: #de3c9e;
 	cursor: pointer;
 }
 
@@ -425,7 +426,7 @@ header h2.tzine a{
 }
 
 .nav-info{
-	border: 2px solid black;
+	border: 2px solid #87bae1;
 	margin-top: 15px;
 	cursor: pointer;
 }
@@ -435,26 +436,29 @@ header h2.tzine a{
 }
 
 .nav-info span{
-	display: inline-block;
+	display: block;
 }
 
 .nav-info img{
-	width: 13%;
+	width: 27%;
 	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
 }
 
 .items-list{
 	width: 650px;
+	margin: 15px auto;
 	display: flex;
 	justify-content: space-between;
 }
 
-.items-list h4{
+.items-list span{
 	width: 100px;
 }
 
 .preview-large .items-list h3{
-	width: 520px;
+	width: 300px;
 	margin-top: 0px;
 }
 
@@ -465,7 +469,7 @@ header h2.tzine a{
 }
 
 .total-products .preview-large{
-	height: auto;
+	overflow: auto;
 	margin-top: 50px;
 	top: 10%;
 }
@@ -492,3 +496,21 @@ header h2.tzine a{
 	src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 
+.total-money{
+	display: flex;
+	justify-content: center;
+	color: #87bae1;
+}
+
+.total-count span{
+	width: 30px;
+	color: white;
+	background-color: #4BC34B;
+	text-align: center;
+	margin-left: 32px;
+	margin-top: -35px;
+}
+
+.total-button{
+	margin-bottom: 20px;
+}

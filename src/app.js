@@ -9,6 +9,7 @@ class App {
         this.checkboxService = new CheckboxService();
         this.basket = new Basket;
         this.checkboxService.subscribe(this.onFilterChange);
+        this.initTotalProductsPage();
         this.initSingleProductPage();
         this.init();
     }
@@ -31,7 +32,7 @@ class App {
         this.router.addRoute('', this.renderHomePage.bind(this));
         this.router.addRoute('#filter', this.renderFilterResults.bind(this));
         this.router.addRoute('#product', this.renderSingleProduct.bind(this));
-        this.router.addRoute('#total', this.renderTotalProducts.bind(this));
+        this.router.addRoute('#total', this.basket.renderTotalProducts.bind(this));
         this.router.addRoute('404', this.renderErrorPage.bind(this));
     }
 
@@ -44,14 +45,26 @@ class App {
     }
 
     initSingleProductPage() {
-        const self = this;
         this.singleProductPage = document.querySelector('.single-product');
         this.singleProductPage.addEventListener('click', (event) => {
-           if (self.singleProductPage.classList.contains('visible')) {
+           if (this.singleProductPage.classList.contains('visible')) {
                const clicked = event.target;
 
                if (clicked.classList.contains('close') || clicked.classList.contains('overlay')) {
-                   location.hash = self.checkboxService.getCurrentState();
+                   location.hash = this.checkboxService.getCurrentState();
+               }
+           }
+        });
+    }
+
+    initTotalProductsPage() {
+        this.totalProductPage = document.querySelector('.total-products');
+        this.totalProductPage.addEventListener('click', (event) => {
+           if (this.totalProductPage.classList.contains('visible')) {
+               const clicked = event.target;
+
+               if (clicked.classList.contains('close') || clicked.classList.contains('overlay')) {
+                   location.hash = this.checkboxService.getCurrentState();
                }
            }
         });
@@ -103,12 +116,6 @@ class App {
         }
 
         page.classList.add('visible');
-    }
-
-    renderTotalProducts() {
-        const pageTotal = document.querySelector('.total-products');
-        console.log()
-        pageTotal.classList.add('visible');
     }
 
     generateAllProductsHTML(data) {

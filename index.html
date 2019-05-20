@@ -53,10 +53,14 @@
 
 					<button>Clear filters</button>
 					<div id="cart-info" class="nav-info">
-						<img src="assets/images/basket.png" alt="basket">
-						<span id="item-count">0</span>
-						<span>items - $</span>
-						<span id="item-total">0</span>
+						<div class="total-count">
+							<img src="assets/images/basket.png" alt="basket">
+							<span id="item-count">0</span>
+						</div>
+						<div class="total-money">
+							<span>$</span>
+							<span id="item-total">0</span>
+						</div>
 					</div>
 
 				</form>
@@ -104,14 +108,22 @@
 			<div class="overlay"></div>
 
 			<div id="cart-item" class="preview-large">
+			<div class="top-list">
+				<h3>Selected products view</h3>
+			</div>
 <!-- 				<div class="items-list">
 					<img src=""/>
 					<h3>Single product view</h3>
-					<h4>100$</h4>
+					<span class="price-item">100</span>
+					<span>$</span>
 					<div class="delete-icon fas fa-trash" data-id=""></div>
 				</div> -->
 
 				<span id="close-cart" class="close">×</span>
+				<h3>Total: $
+					<span id="final-money">0</span>
+				</h3>
+				<button class="total-button">Buy Now!</button>
 			</div>
 
 		</div>

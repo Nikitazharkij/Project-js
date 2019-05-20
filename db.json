@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Sony Xperia Z3",
-      "price": 899,
+      "price": 999.99,
       "specs": {
         "manufacturer": "Sony",
         "storage": 16,
@@ -37,7 +37,7 @@
     {
       "id": 3,
       "name": "HTC One M8",
-      "price": 899,
+      "price": 450.50,
       "specs": {
         "manufacturer": "HTC",
         "storage": 32,
@@ -54,7 +54,7 @@
     {
       "id": 4,
       "name": "Galaxy Alpha",
-      "price": 899,
+      "price": 148.12,
       "specs": {
         "manufacturer": "Samsung",
         "storage": 32,
@@ -105,7 +105,7 @@
     {
       "id": 7,
       "name": "Samsung Galaxy S5",
-      "price": 399,
+      "price": 120,
       "specs": {
         "manufacturer": "Samsung",
         "storage": 16,
@@ -122,7 +122,7 @@
     {
       "id": 8,
       "name": "Iphone 5S",
-      "price": 399,
+      "price": 534,
       "specs": {
         "manufacturer": "Apple",
         "storage": 16,
