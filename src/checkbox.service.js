@@ -70,7 +70,7 @@ export class CheckboxService {
     }
 
     renderFilters(products, filter) {
-        const criteria = ['manufacturer', 'storage', 'os', 'camera'];
+        const criteria = ['cuisine', 'storage', 'os', 'camera'];
         products = [...products];
         let result = [];
         let isFiltered = false;

@@ -1,12 +1,12 @@
 export class Basket {
     constructor() {
-        this.cartInfo = document.getElementById('cart-info');
-        this.productButtons = document.querySelectorAll('.product-button');
         this.items = {};
+        this.count = 0;
         this.itemTotal = document.getElementById('item-total');
         this.itemCount = document.getElementById('item-count');
         this.spendMoney = document.getElementById('final-money');
         this.buyItems();
+        this.deleteItem();
     }
 
     addPriceList(){
@@ -17,6 +17,7 @@ export class Basket {
             let price = event.target.nextElementSibling.textContent;
             let finalPrice = price.slice(0, -1);
             this.items.price = finalPrice;
+            this.count++;
 
             let nameItem = event.target.previousElementSibling.previousElementSibling.textContent;
             this.items.name = nameItem;
@@ -34,7 +35,7 @@ export class Basket {
                     <h3>${this.items.name}</h3>
                     <span class="price-item">${this.items.price}</span>
                     <span>$</span>
-                    <div class="delete-icon fas fa-trash" data-id=""></div>
+                    <div class="delete-icon fas fa-trash" data-id="${this.count}"></div>
             `
 
             const cart = document.getElementById('cart-item');
@@ -75,6 +76,7 @@ export class Basket {
 
     buyItems(){
     const totalButton = document.querySelector('.total-button');
+
     totalButton.addEventListener('click', (event) => {
         const itemsList = document.querySelectorAll('.total-products .items-list');
 
@@ -93,6 +95,21 @@ export class Basket {
         });
 
     });
+
 }
+
+    deleteItem(){
+    const totalProducts = document.querySelector('.total-products');
+
+        totalProducts.addEventListener('click', (event) => {
+
+            if (event.target.classList.contains('delete-icon')) {
+                event.target.parentElement.remove();
+            }
+
+            this.showTotals();
+
+        });
+    }
 
 }

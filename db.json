@@ -2,10 +2,10 @@
   "products": [
     {
       "id": 1,
-      "name": "Sony Xperia Z3",
-      "price": 999.99,
+      "name": "Sweet Cake",
+      "price": 99.99,
       "specs": {
-        "manufacturer": "Sony",
+        "cuisine": "Italian",
         "storage": 16,
         "os": "Android",
         "camera": 15
@@ -13,16 +13,16 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
       "image": {
-        "small": "assets/images/sony-xperia-z3.jpg",
-        "large": "assets/images/sony-xperia-z3-large.jpg"
+        "small": "assets/images/sweet-cake.jpg",
+        "large": "assets/images/sweet-cake-large.jpg"
       }
     },
     {
       "id": 2,
-      "name": "Iphone 6",
-      "price": 899,
+      "name": "Sweet Cupcake",
+      "price": 10.00,
       "specs": {
-        "manufacturer": "Apple",
+        "cuisine": "Chinese",
         "storage": 16,
         "os": "iOS",
         "camera": 8
@@ -30,16 +30,16 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
       "image": {
-        "small": "assets/images/iphone6.jpg",
-        "large": "assets/images/iphone6-large.jpg"
+        "small": "assets/images/sweet-cupcake.jpg",
+        "large": "assets/images/sweet-cupcake-large.jpg"
       }
     },
     {
       "id": 3,
-      "name": "HTC One M8",
-      "price": 450.50,
+      "name": "Pink Cake",
+      "price": 50.50,
       "specs": {
-        "manufacturer": "HTC",
+        "cuisine": "French",
         "storage": 32,
         "os": "Android",
         "camera": 5
@@ -47,16 +47,16 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
       "image": {
-        "small": "assets/images/htc-one.jpg",
-        "large": "assets/images/htc-one-large.jpg"
+        "small": "assets/images/pink-cake.jpg",
+        "large": "assets/images/pink-cake-large.jpg"
       }
     },
     {
       "id": 4,
-      "name": "Galaxy Alpha",
-      "price": 148.12,
+      "name": "Chocolate Cupcake",
+      "price": 48.12,
       "specs": {
-        "manufacturer": "Samsung",
+        "cuisine": "Mexican",
         "storage": 32,
         "os": "Android",
         "camera": 12
@@ -64,16 +64,16 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
       "image": {
-        "small": "assets/images/galaxy-alpha.jpg",
-        "large": "assets/images/galaxy-alpha-large.jpg"
+        "small": "assets/images/chocolate-cupcake.jpg",
+        "large": "assets/images/chocolate-cupcake-large.jpg"
       }
     },
     {
       "id": 5,
-      "name": "Nokia Lumia",
-      "price": 450,
+      "name": "Sweet Doughnut",
+      "price": 45.00,
       "specs": {
-        "manufacturer": "Nokia",
+        "cuisine": "Spanish",
         "storage": 16,
         "os": "Windows",
         "camera": 5
@@ -81,16 +81,16 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
       "image": {
-        "small": "assets/images/nokia-lumia.jpg",
-        "large": "assets/images/nokia-lumia-large.jpg"
+        "small": "assets/images/sweet-doughnut.jpg",
+        "large": "assets/images/sweet-doughnut-large.jpg"
       }
     },
     {
       "id": 6,
-      "name": "Zte Nubia",
-      "price": 399,
+      "name": "Nice Cupcake",
+      "price": 39.90,
       "specs": {
-        "manufacturer": "ZTE",
+        "cuisine": "Russian",
         "storage": 32,
         "os": "Android",
         "camera": 12
@@ -98,16 +98,16 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
       "image": {
-        "small": "assets/images/zte-nubia.jpg",
-        "large": "assets/images/zte-nubia-large.jpg"
+        "small": "assets/images/nice-cupcake.jpg",
+        "large": "assets/images/nice-cupcake-large.jpg"
       }
     },
     {
       "id": 7,
-      "name": "Samsung Galaxy S5",
-      "price": 120,
+      "name": "Nice Doughnut",
+      "price": 12.00,
       "specs": {
-        "manufacturer": "Samsung",
+        "cuisine": "French",
         "storage": 16,
         "os": "Android",
         "camera": 15
@@ -115,16 +115,16 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
       "image": {
-        "small": "assets/images/galaxy-s5.jpg",
-        "large": "assets/images/galaxy-s5-large.jpg"
+        "small": "assets/images/nice-doughnut.jpg",
+        "large": "assets/images/nice-doughnut-large.jpg"
       }
     },
     {
       "id": 8,
-      "name": "Iphone 5S",
-      "price": 534,
+      "name": "Mix Cupcake",
+      "price": 53.40,
       "specs": {
-        "manufacturer": "Apple",
+        "cuisine": "Mexican",
         "storage": 16,
         "os": "iOS",
         "camera": 8
@@ -132,8 +132,8 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
       "image": {
-        "small": "assets/images/iphone5s.jpg",
-        "large": "assets/images/iphone5s-large.jpg"
+        "small": "assets/images/mix-cupcake.jpg",
+        "large": "assets/images/mix-cupcake-large.jpg"
       }
     }
   ]
