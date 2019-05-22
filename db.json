@@ -3,12 +3,11 @@
     {
       "id": 1,
       "name": "Sweet Cake",
-      "price": 99.99,
+      "price": 49.99,
       "specs": {
         "cuisine": "Italian",
-        "storage": 16,
-        "os": "Android",
-        "camera": 15
+        "weight": "250 gr.",
+        "dessert": "Cake"
       },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
@@ -20,12 +19,11 @@
     {
       "id": 2,
       "name": "Sweet Cupcake",
-      "price": 10.00,
+      "price": 10.25,
       "specs": {
         "cuisine": "Chinese",
-        "storage": 16,
-        "os": "iOS",
-        "camera": 8
+        "weight": "150 gr.",
+        "dessert": "Cupcake"
       },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
@@ -37,12 +35,11 @@
     {
       "id": 3,
       "name": "Pink Cake",
-      "price": 50.50,
+      "price": 50.52,
       "specs": {
         "cuisine": "French",
-        "storage": 32,
-        "os": "Android",
-        "camera": 5
+        "weight": "200 gr.",
+        "dessert": "Cake"
       },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
@@ -57,9 +54,8 @@
       "price": 48.12,
       "specs": {
         "cuisine": "Mexican",
-        "storage": 32,
-        "os": "Android",
-        "camera": 12
+        "weight": "100 gr.",
+        "dessert": "Cupcake"
       },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
@@ -71,12 +67,11 @@
     {
       "id": 5,
       "name": "Sweet Doughnut",
-      "price": 45.00,
+      "price": 45.58,
       "specs": {
         "cuisine": "Spanish",
-        "storage": 16,
-        "os": "Windows",
-        "camera": 5
+        "weight": "150 gr.",
+        "dessert": "Doughnut"
       },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
@@ -88,12 +83,11 @@
     {
       "id": 6,
       "name": "Nice Cupcake",
-      "price": 39.90,
+      "price": 39.95,
       "specs": {
         "cuisine": "Russian",
-        "storage": 32,
-        "os": "Android",
-        "camera": 12
+        "weight": "250 gr.",
+        "dessert": "Cupcake"
       },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
@@ -105,12 +99,11 @@
     {
       "id": 7,
       "name": "Nice Doughnut",
-      "price": 12.00,
+      "price": 12.17,
       "specs": {
         "cuisine": "French",
-        "storage": 16,
-        "os": "Android",
-        "camera": 15
+        "weight": "100 gr.",
+        "dessert": "Doughnut"
       },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,
@@ -122,12 +115,11 @@
     {
       "id": 8,
       "name": "Mix Cupcake",
-      "price": 53.40,
+      "price": 53.41,
       "specs": {
         "cuisine": "Mexican",
-        "storage": 16,
-        "os": "iOS",
-        "camera": 8
+        "weight": "200 gr.",
+        "dessert": "Cupcake"
       },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
       "rating": 4,

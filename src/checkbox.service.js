@@ -17,6 +17,7 @@ export class CheckboxService {
 
         document.querySelector('.filters button').addEventListener('click', (event) => {
             event.preventDefault();
+            this.clearCheckbox();
             this.filters = {};
             this._observable.next('#');
         });
@@ -70,11 +71,10 @@ export class CheckboxService {
     }
 
     renderFilters(products, filter) {
-        const criteria = ['cuisine', 'storage', 'os', 'camera'];
+        const criteria = ['cuisine', 'weight', 'dessert'];
         products = [...products];
         let result = [];
         let isFiltered = false;
-        this.clearCheckbox();
 
         criteria.forEach((c) => {
 

@@ -26,7 +26,6 @@ export class Basket {
             let path = fullPath.indexOf('images');
             let partPath = fullPath.slice(path);
             this.items.img = fullPath;
-            console.log(this.items.img);
 
             const cartItem = document.createElement('div');
             cartItem.classList.add('items-list');
@@ -70,8 +69,6 @@ export class Basket {
         this.itemTotal.textContent = finalMoney;
         this.spendMoney.textContent= finalMoney;
         this.itemCount.textContent = total.length;
-
-        console.log(finalMoney);
     }
 
     buyItems(){
@@ -85,9 +82,9 @@ export class Basket {
         this.itemCount.textContent = 0;
 
         if (itemsList.length === 0) {
-            alert('No items for choosing!!!')
+            alert('No items for ordering!!!')
         } else {
-            alert('You bought items.')
+            alert('You bought products.')
         }
 
         itemsList.forEach((item) => {

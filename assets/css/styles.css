@@ -252,7 +252,7 @@ header h2.tzine a{
 }
 
 .products-list .product-description li{
-	display: inline-block;
+	display: block;
 	margin-right: 5px;
 }
 
@@ -395,7 +395,7 @@ header h2.tzine a{
 .close{
 	position: absolute;
 	right: 25px;
-	top: -35px;
+	top: 0;
 
 	font-size: 28px;
 	color: #de3c9e;

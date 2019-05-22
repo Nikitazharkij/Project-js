@@ -31,24 +31,18 @@
 					</div>
 
 					<div class="filter-criteria">
-						<span>Screen Size</span>
-						<label><input type="checkbox" value="16" name="storage">16 GB</label>
-						<label><input type="checkbox" value="32" name="storage">32 GB</label>
+						<span>Weight (gr.)</span>
+						<label><input type="checkbox" value="100" name="weight">100</label>
+						<label><input type="checkbox" value="150" name="weight">150</label>
+						<label><input type="checkbox" value="200" name="weight">200</label>
+						<label><input type="checkbox" value="250" name="weight">250</label>
 					</div>
 
 					<div class="filter-criteria">
-						<span>OS</span>
-						<label><input type="checkbox" value="android" name="os">Android</label>
-						<label><input type="checkbox" value="ios" name="os">iOS</label>
-						<label><input type="checkbox" value="windows" name="os">Windows</label>
-					</div>
-
-					<div class="filter-criteria">
-						<span>Camera</span>
-						<label><input type="checkbox" value="5" name="camera">5 Mpx</label>
-						<label><input type="checkbox" value="8" name="camera">8 Mpx</label>
-						<label><input type="checkbox" value="12" name="camera">12 Mpx</label>
-						<label><input type="checkbox" value="15" name="camera">15 Mpx</label>
+						<span>Dessert</span>
+						<label><input type="checkbox" value="cake" name="dessert">Cake</label>
+						<label><input type="checkbox" value="cupcake" name="dessert">Cupcake</label>
+						<label><input type="checkbox" value="doughnut" name="dessert">Doughnut</label>
 					</div>
 
 					<button>Clear filters</button>
@@ -75,9 +69,8 @@
 							<h2><a href="#"> {{name}} </a></h2>
 							<ul class="product-description">
 								<li><span>Cuisine: </span>{{specs.cuisine}}</li>
-								<li><span>Storage: </span>{{specs.storage}} GB</li>
-								<li><span>OS: </span>{{specs.os}}</li>
-								<li><span>Camera: </span>{{specs.camera}} Mpx</li>
+								<li><span>Weight: </span>{{specs.weight}}</li>
+								<li><span>Dessert: </span>{{specs.dessert}} Mpx</li>
 							</ul>
 							<button class="product-button">Buy Now!</button>
 							<p class="product-price">{{price}}$</p>
