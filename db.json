@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Sweet Cake",
-      "price": 49.99,
+      "price": 49,
       "specs": {
         "cuisine": "Italian",
         "weight": "250 gr.",
@@ -19,7 +19,7 @@
     {
       "id": 2,
       "name": "Sweet Cupcake",
-      "price": 10.25,
+      "price": 102,
       "specs": {
         "cuisine": "Chinese",
         "weight": "150 gr.",
@@ -35,7 +35,7 @@
     {
       "id": 3,
       "name": "Pink Cake",
-      "price": 50.52,
+      "price": 55,
       "specs": {
         "cuisine": "French",
         "weight": "200 gr.",
@@ -51,7 +51,7 @@
     {
       "id": 4,
       "name": "Chocolate Cupcake",
-      "price": 48.12,
+      "price": 48,
       "specs": {
         "cuisine": "Mexican",
         "weight": "100 gr.",
@@ -67,7 +67,7 @@
     {
       "id": 5,
       "name": "Sweet Doughnut",
-      "price": 45.58,
+      "price": 45,
       "specs": {
         "cuisine": "Spanish",
         "weight": "150 gr.",
@@ -83,7 +83,7 @@
     {
       "id": 6,
       "name": "Nice Cupcake",
-      "price": 39.95,
+      "price": 39,
       "specs": {
         "cuisine": "Russian",
         "weight": "250 gr.",
@@ -99,7 +99,7 @@
     {
       "id": 7,
       "name": "Nice Doughnut",
-      "price": 12.17,
+      "price": 12,
       "specs": {
         "cuisine": "French",
         "weight": "100 gr.",
@@ -115,7 +115,7 @@
     {
       "id": 8,
       "name": "Mix Cupcake",
-      "price": 53.41,
+      "price": 93,
       "specs": {
         "cuisine": "Mexican",
         "weight": "200 gr.",

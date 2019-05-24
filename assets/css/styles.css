@@ -268,17 +268,17 @@ header h2.tzine a{
 
 .products-list button,
 .total-button{
-	border-radius: 2px;
-	background-color:  #87bae1;
+	border-radius: 15px;
+	background-color: #d24e8f;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
 	border: 0;
 	color: #ffffff;
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 20px;
 	cursor: pointer;
 
-	width: 95px;
-	height: 32px;
+	width: 150px;
+	height: 40px;
 }
 
 .products-list .product-price{
@@ -426,6 +426,8 @@ header h2.tzine a{
 }
 
 .nav-info{
+	width: 90px;
+	height: 65px;
 	border: 2px solid #87bae1;
 	margin-top: 15px;
 	cursor: pointer;
@@ -440,7 +442,7 @@ header h2.tzine a{
 }
 
 .nav-info img{
-	width: 27%;
+	width: 35px;
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 5px;
@@ -513,4 +515,26 @@ header h2.tzine a{
 
 .total-button{
 	margin-bottom: 20px;
+}
+
+.message{
+	background-color: #1e2d39;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 20px;
+	border-radius: 10px;
+	opacity: 0;
+	position: fixed;
+	left: 50%;
+	top: 10%;
+}
+
+.message.visible{
+	opacity: 1;
+	z-index: 10;
+}
+
+.preview-large .items-list h3.count-products {
+	width: 50px;
 }

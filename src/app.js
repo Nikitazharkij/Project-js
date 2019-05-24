@@ -23,7 +23,8 @@ class App {
                 this.products = data;
                 this.generateAllProductsHTML(this.products);
                 this.initRoutes();
-                this.basket.addPriceList();
+                this.basket.addItemsInBasket();
+                this.basket.deleteItem();
                 window.dispatchEvent(new HashChangeEvent('hashchange'));
             });
     }
