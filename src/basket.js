@@ -8,6 +8,7 @@ export class Basket {
         this.spendMoney = document.getElementById('final-money');
         this.totalProducts = document.querySelector('.total-products');
         this.message = document.querySelector('.message');
+        this.addToCart = document.querySelector('.add-to-cart');
         this.nameSweets = document.querySelectorAll('.sweets');
         this.buyItems();
     }
@@ -18,6 +19,8 @@ export class Basket {
         productsButtons.forEach((button) => {
         button.addEventListener('click', (event) => {
 
+            setTimeout(this.showMessage.bind(this, this.addToCart), 200);
+            setTimeout(this.hideMessage.bind(this, this.addToCart), 2500);
             this.count++;
 
             let nameItem = event.target.previousElementSibling.previousElementSibling.textContent;
@@ -69,8 +72,7 @@ export class Basket {
             [...items].forEach((product) => {
                 if (product.textContent === nameItem) {
                     let countProduct = product.previousElementSibling;
-                    let count = Number(product.previousElementSibling.textContent);
-                    countProduct.textContent = count + 1;
+                    countProduct.textContent++;
                 }
             });
 
@@ -122,8 +124,6 @@ export class Basket {
         totalButton.addEventListener('click', (event) => {
             const itemsList = document.querySelectorAll('.total-products .items-list');
 
-            // this.localStorage();
-
             this.itemTotal.textContent = 0;
             this.spendMoney.textContent= 0;
             this.itemCount.textContent = 0;
@@ -135,8 +135,8 @@ export class Basket {
             });
 
             setTimeout(this.homePage, 500);
-            setTimeout(this.showMessage.bind(this), 1000);
-            setTimeout(this.hideMessage.bind(this), 3500);
+            setTimeout(this.showMessage.bind(this, this.message), 1000);
+            setTimeout(this.hideMessage.bind(this, this.message), 3500);
 
         });
 
@@ -146,16 +146,15 @@ export class Basket {
         window.location.hash = '#';
     }
 
-    showMessage(){
-        this.message.classList.add('visible');
+    showMessage(item){
+        item.classList.add('visible');
     }
 
-    hideMessage(){
-        this.message.classList.remove('visible');
+    hideMessage(item){
+        item.classList.remove('visible');
     }
 
     deleteItem(){
-        // const nameSweets = document.querySelectorAll('.sweets');
         const sweetsName = document.querySelectorAll('.sweets h2');
 
         this.totalProducts.addEventListener('click', (event) => {
@@ -163,7 +162,9 @@ export class Basket {
             if (event.target.classList.contains('delete-icon')) {
                 const productBusketPrice = event.target.previousElementSibling.previousElementSibling;
                 const deleteProductName = event.target.previousElementSibling.previousElementSibling.previousElementSibling.textContent;
+                let productCount = event.target.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling;
 
+                productCount.textContent--;
                 this.count--;
 
                 [...sweetsName].forEach((item) => {

@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 
-	<title>Single Page App Without A Framework</title>
+	<title>Products Cart</title>
 
 	<link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
@@ -17,6 +17,7 @@
 	<div class="main-content">
 
 		<div class="message">You bought sweets</div>
+		<div class="message add-to-cart">Product add to cart</div>
 		<div class="all-products page">
 
 			<div class="filters">
@@ -74,7 +75,7 @@
 								<li><span>Weight: </span>{{specs.weight}}</li>
 								<li><span>Dessert: </span>{{specs.dessert}} Mpx</li>
 							</ul>
-							<button class="product-button">Buy Now!</button>
+							<button class="product-button">Add to cart</button>
 							<p class="product-price">{{price}}$</p>
 						</li>
 					{{/each}}
