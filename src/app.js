@@ -106,7 +106,8 @@ class App {
         const page = document.querySelector('.single-product');
         const container = document.querySelector('.preview-large');
         const index = location.hash.split('#product/')[1].trim();
-        if (this.products.length) {
+        if (index <= this.products.length) {
+            console.log(this.products.length);
             this.products.forEach((item) => {
                 if (Number(item.id) === Number(index)) {
                     container.querySelector('h3').innerText = item.name;
@@ -114,9 +115,13 @@ class App {
                     container.querySelector('p').innerText = item.description;
                 }
             });
-        }
 
         page.classList.add('visible');
+
+        } else {
+            this.renderErrorPage();
+        }
+
     }
 
     generateAllProductsHTML(data) {
