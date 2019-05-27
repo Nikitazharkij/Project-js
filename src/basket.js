@@ -120,15 +120,21 @@ export class Basket {
 
     buyItems(){
         const totalButton = document.querySelector('.total-button');
+		const inputName = document.getElementById('input-name');
+		const inputPhone = document.getElementById('input-phone');
 
         totalButton.addEventListener('click', (event) => {
             const itemsList = document.querySelectorAll('.total-products .items-list');
-
+			
+			localStorage.setItem(inputName.value, inputPhone.value);
+						
             this.itemTotal.textContent = 0;
             this.spendMoney.textContent= 0;
             this.itemCount.textContent = 0;
             this.nameItems = [];
             this.count = 0;
+			inputName.value = '';
+			inputPhone.value = '';
 
             itemsList.forEach((item) => {
                 item.remove();

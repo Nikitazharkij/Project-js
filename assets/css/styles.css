@@ -84,7 +84,7 @@ header h2.tzine a{
 .top-list{
 	font-size: 28px;
 	color:  #5a96b9;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 }
 
 @media (max-width: 600px){
@@ -514,6 +514,7 @@ header h2.tzine a{
 }
 
 .total-button{
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -538,3 +539,16 @@ header h2.tzine a{
 .preview-large .items-list h3.count-products {
 	width: 50px;
 }
+
+.preview-large h4 p{
+	padding: 10px;
+	color: #d24e8f;
+	font-size: 28px
+}
+
+.preview-large h4 input{
+	height: 40px;
+	width: 300px;
+	font-size: 30px;
+}
+
